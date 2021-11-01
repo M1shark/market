@@ -1,0 +1,38 @@
+:root {
+    --gutter: 20px;
+}
+
+.container {
+    /* max-width: 1234px; */
+    width: 1234px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    background: black;
+}
+
+.products-grid {
+    grid-column: 3 span;
+    display: grid;
+    grid-gap: var(--gutter);
+    grid-template-columns: repeat(4, 2fr);
+    background: black;
+}
+
+.products-grid__item {
+    background: black;
+    height: 400px;
+}
+
+.fixed {
+    position: fixed;
+    top: var(--gutter);
+    left: 0;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

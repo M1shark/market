@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1.1px;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: #1c1d22;
+    font-family: "Varela Round", sans-serif;
+}
+
+.header {
+    background: #0F0F0F;
+    height: 80px;
+}
+
+.conteiner_header {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 31px;
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.silka {
+    text-decoration: none;
+    font-size: 22px;
+    color: #777;
+    transition: all 0.45s;
+}
+
+.spisok {
+    text-decoration: none;
+    margin-right: 40px;
+    width: 125px;
+    height: 50px;
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+}
+
+.spisok:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    animation: line 1s;
+}
+
+.spisok:hover a {
+    color: #d94f5c;
+}
+
+.spisok:not(:last-child) {
+    margin-right: 30px;
+}
+
+@keyframes line {
+    0% {
+        background-position-x: 390px;
+    }
+}
+
+
+/*-----------Header---------*/
+
+.conteiner_info {
+    background: url(/img/Rectangle\ 3.svg);
+    height: 810px;
+    display: flex;
+    justify-content: center;
+}
+
+.header_info {
+    text-align: center;
+    margin-top: 253px;
+}
+
+.porten_logo {
+    font-family: Post No Bills Jaffna;
+    /* добавить шрифт */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 96px;
+    color: #FFFFFF;
+    border-bottom: solid white 2px;
+}
+
+.under_logo {
+    margin-top: 7px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.border_info {
+    padding: 20px;
+    border: solid white 4px;
+}
+
+
+/*-----------new_collection------------*/
+
+.conteiner_new_collection {
+    display: flex;
+    justify-content: center;
+    background: black;
+    height: 630px;
+}
+
+.collection_2018-info {
+    padding-top: 100px;
+}
+
+.header_collection_2018-text {
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    /* white */
+    color: #FFFFFF;
+    border-bottom: solid 2px white;
+    padding: 30px;
+}
+
+.under_header_collection_2018 {
+    padding-top: 40px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+    text-align: center;
+    /* white */
+    color: #FFFFFF;
+    width: 470px;
+}
+
+
+/*КНОПКА ПЕРЕХОДА*/
+
+.button_2018 {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.button_collection_2018 {
+    justify-content: center;
+    padding: 12px 28px;
+    width: 411px;
+    height: 47px;
+    background: black;
+}
+
+.link_collection_2018 {
+    text-decoration: none;
+    font-size: 22px;
+    color: #777;
+    transition: all 0.45s;
+}
+
+.button_collection_2018 {
+    height: 50px;
+    -webkit-transition: background-position-x 0.9s linear;
+    transition: background-position-x 0.9s linear;
+    text-align: center;
+}
+
+.button_collection_2018:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    -webkit-animation: line 1s;
+    animation: line 1s;
+}
+
+.button_collection_2018:hover a {
+    color: #d94f5c;
+}
+
+.button_collection_2018:not(:last-child) {
+    margin-right: 30px;
+}
+
+@-webkit-keyframes line {
+    0% {
+        background-position-x: 390px;
+    }
+}
+
+@keyframes line {
+    0% {
+        background-position-x: 390px;
+    }
+}
+
+.button_collection_2018-text {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    /* white */
+    color: #FFFFFF;
+}
+
+
+/*КНОПКА ПЕРЕХОДА*/
+
+
+/*Vidio*/
+
+.sec_vidio {
+    height: 500px;
+}
+
+.conteiner_vidio {
+    float: left;
+}
+
+.vidio {
+    height: 500px;
+    width: 500px;
+}
+
+
+/*Vidio*/
+
+
+/*----------footer------------------*/
+
+.container {
+    padding-bottom: 3rem!important;
+}
+
+.footer-bottom {
+    background: black;
+    padding-bottom: 1.5rem;
+    padding: 50px 0;
+    padding-top: 250px;
+}
+
+.subscribe-butn {
+    color: #ffffff;
+    border: none;
+    padding: 7px 12px;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 0px;
+    background: #ff0779;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.subscribe-butn:hover {
+    background-color: darken(#ff0779, 10%);
+    color: #fff;
+}
+
+.newsletter-footers {
+    width: 50%;
+    margin: 0px auto;
+}
+
+.newsletter-footers input[type="email"] {
+    width: 71%;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    padding: .6em 0em;
+    outline: none;
+    border: none;
+    /* border-bottom: 2px solid #28a745; */
+    border-radius: 0px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+
+
+/*--//Newsletter--*/
+
+.footer-w3layouts-head {
+    margin-bottom: 3rem;
+}
+
+.footer-w3layouts-head h2 a {
+    font-size: 29px;
+    font-weight: 400;
+    color: #fff;
+}
+
+a.move-top span {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+}
+
+.address-grids-by p,
+.address-grids-by p a {
+    font-size: 14px;
+    color: #8c8c8c;
+    line-height: 25px;
+}
+
+.hair-list li {
+    display: block;
+}
+
+.single-title.text-left h4,
+.text-w3layouts-grids h4 {
+    font-size: 17px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: #ff0779;
+}
+
+.hair-list li a,
+.single-title ul li,
+.single-title ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #676464;
+    line-height: 36px;
+}
+
+.bottem-wthree-footer {
+    padding: 50px 0;
+}
+
+.address-grids-by p a:hover,
+.subscribe-butn:hover,
+.blog-buttn a:hover,
+.sent-butnn:hover,
+.hair-list li a:hover {
+    opacity: .8;
+}
+
+.bottem-wthree-footer p {
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.bottem-wthree-footer p a {
+    color: #00d0ff;
+    font-size: 14px;
+}
+
+.bottem-wthree-footer p a:hover {
+    color: #fff;
+}
+
+.bottem-wthree-footer {
+    background: #525252;
+}
+
+
+/*--footer--*/
+
+.bottem-wthree-footer {
+    display: flex;
+    justify-content: center;
+}
